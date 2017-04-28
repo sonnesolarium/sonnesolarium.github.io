@@ -2548,7 +2548,7 @@ h1 .label-custom, h2 .label-custom, h3 .label-custom, h4 .label-custom, h5 .labe
 }
 
 .font-secondary {
-  font-family: "Changa One", cursive;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
 }
 
 h4.font-default {
@@ -2985,7 +2985,7 @@ span.contact-info {
 }
 
 .bg-image-6 {
-  background-image: url("../images/slika1.jpg");
+  background-image: url("../images/background_fitness.jpg");
   background-attachment: fixed;
 }
 
@@ -28826,7 +28826,7 @@ html.rd-navbar-sidebar-linked body .page {
 
 .rd-navbar-default .rd-navbar-static.rd-navbar--is-clone, .rd-navbar-default .rd-navbar-static.rd-navbar--is-stuck {
   padding-top: 0;
-  background: #590460;
+  background: #461458;
 }
 
 .rd-navbar-default .rd-navbar-static.rd-navbar--is-clone .rd-navbar-megamenu, .rd-navbar-default .rd-navbar-static.rd-navbar--is-stuck .rd-navbar-megamenu {
@@ -34305,5 +34305,4 @@ span.search {
   -webkit-transform: scale(1.25);
   transform: scale(1.25);
 }
-
 /*# sourceMappingURL=style.css.map */
