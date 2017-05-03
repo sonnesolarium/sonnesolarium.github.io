@@ -43,7 +43,7 @@
                                                     <div class="unit unit-horizontal unit-middle unit-spacing-xs">
                                                         <div class="unit-left"><span class="icon icon-circle icon-gray-dark icon-xxs mdi mdi-map-marker text-middle"></span></div>
                                                         <div class="unit-body">
-                                                            <address class="contact-info"><a href="#" class="link-default link-xs">Ulica Ivana Generalića 3 (Martinovka) <br class="visible-md visible-lg"> 48000 Koprivnica</a></address>
+                                                            <address class="contact-info"><a class="link-default link-xs">Ulica Ivana Generalića 3 (Martinovka) <br class="visible-md visible-lg"> 48000 Koprivnica</a></address>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -51,7 +51,7 @@
                                                     <div class="unit unit-horizontal unit-middle unit-spacing-xs">
                                                         <div class="unit-left"><span class="icon icon-circle icon-gray-dark icon-xxs mdi mdi-phone text-middle"></span></div>
                                                         <div class="unit-body">
-                                                            <address class="contact-info"><a href="callto:#" class="link-default link-xs">097 761 9290</a><span class="reveal-block text-base link-xs">pon–pet: 09–20, sub: 09-15</span></address>
+                                                            <address class="contact-info"><a class="link-default link-xs">097 761 9290</a><span class="reveal-block text-base link-xs"><a class="link-default link-xs">pon–pet: 09–20, sub: 09-15</a></span></address>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -75,8 +75,8 @@
                                     <li>
                                         <a href="/index.html">Početna</a>
                                     </li>
-                                    <li>
-                                        <a href="/about.html">O nama</a>
+                                    <li class="active">
+                                        <a href="/onama.html">O nama</a>
                                     </li>
                                     <li>
                                         <a href="/index.html">Kozmetika za sunčanje</a>
@@ -85,10 +85,10 @@
                                         <a href="/index.html">Fitnes kozmetika</a>
                                     </li>
                                     <li>
-                                        <a href="/gallery_grid.html">Galerija</a>
+                                        <a href="/galerija.html">Galerija</a>
                                     </li>
-                                    <li class="active">
-                                        <a href="/contacts.html">Kontakt</a>
+                                    <li>
+                                        <a href="/kontakt.html">Kontakt</a>
                                     </li>
                                 </ul>
                                 <div class="rd-navbar-aside-right">
@@ -125,6 +125,7 @@
                 </nav>
             </div>
         </header>
+        
         <!-- Page Content-->
         <main class="page-content">
             <!-- Breadcrumbs & Page title-->
@@ -132,100 +133,87 @@
                 <div class="shell shell-fluid">
                     <div class="range range-condensed">
                         <div class="cell-xs-12 cell-xl-preffix-1 cell-xl-11">
-                            <p class="h3 text-white">Kontakt</p>
+                            <p class="h3 text-white">Upoznajte nas</p>
                             <ul class="breadcrumbs-custom offset-top-10">
                                 <li><a href="index.html">Početna</a></li>
-                                <li class="active">Kontakt</li>
+                                <li class="active">O nama</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <section class="text-center text-sm-left section-50 section-sm-top-100 section-sm-bottom-100">
+            <section class="text-center text-sm-left section-50 section-sm-top-100 section-sm-bottom-205 section-with-angle bg-black-haze">
                 <div class="shell">
-                    <div class="range range-xs-center">
-                        <div class="cell-md-8">
-                            <h4 class="font-default text-center">Kontaktirajte nas!</h4>
-                            <p class="text-center">Dostupni smo tokom radnog vremena putem telefona ili e-mail-a. Ili, ispunite našu kratku formu gdje možete postaviti sva Vaša pitanja u vezi usluge koju nudimo. Bit će nam zadovoljstvo odgovoriti na sva Vaša pitanja!</p>
-                            <!-- RD Mailform-->
-                            <form data-form-output="form-output-global" data-form-type="contact" method="POST" action="https://formspree.io/info@sonnesolarium.hr" class="rd-mailform form-contact-line text-left offset-top-35">
-                                <div class="form-inline-flex">
-                                    <div class="form-group">
-                                        <label for="contact-name" class="form-label form-label-outside">Ime</label>
-                                        <input id="contact-name" type="text" placeholder="Upišite ime" name="ime" data-constraints="@Required" class="form-control">
+                    <div class="range range-xs-center range-md-right">
+                        <div class="cell-sm-10 cell-md-6">
+                            <h4 class="font-default">Nekoliko riječi o nama!</h4>
+                            <p>Sonne Solarium, danas jeadan od napoznatijih solarija u okolici, započeo je s radom 2015 godine, te se bavi pružanjem usluge sunčanja i disitribucijom proizvoda za sunčanje.</p>
+                            <div class="range range-xs-center offset-top-30 text-center">
+                                <div class="cell-xs-6 cell-sm-6">
+                                    <!-- CountTo-->
+                                    <div class="counter-header">
+                                        <p>više od</p>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="contact-oib" class="form-label form-label-outside">OIB</label>
-                                        <input id="contact-oib" type="text" placeholder="Upišite OIB" name="oib" data-constraints="@Numeric @Required" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group offset-top-15">
-                                    <label for="message" class="form-label form-label-outside">Poruka</label>
-                                    <textarea id="message" placeholder="Vaša poruka" name="poruka" data-constraints="@Required" class="form-control"></textarea>
-                                </div>
-                                <div class="offset-top-15">
-                                    <div class="form-inline-flex">
-                                        <div class="form-group">
-                                            <label for="contact-email-2" class="form-label form-label-outside">E-mail</label>
-                                            <input id="contact-email-2" type="email" placeholder="Upišite e-mail" name="email" data-constraints="@Email @Required" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <button type="submit" class="btn btn-primary btn-fullwidth">Pošalji poruku</button>
-                                        </div>
+                                    <div data-from="0" data-to="1000" class="counter text-primary">1000</div>
+                                    <div class="counter-header">
+                                        <p>zadovoljnih klijenata</p>
                                     </div>
                                 </div>
-                            </form>
-                        </div>
-                        <div class="cell-md-4 offset-top-50 offset-md-top-0 text-left">
-                            <aside class="inset-lg-left-70">
-                                <div class="range">
-                                    <div class="cell-xs-6 cell-md-12">
-                                        <div class="h6 text-uppercase">Pratite nas</div>
-                                        <div class="text-subline offset-top-15"></div>
-                                        <div class="offset-top-25">
-                                            <ul class="list-inline">
-                                                <li><a href="https://www.instagram.com/sonne_solarium/" class="icon icon-xs link-gray-light fa-instagram"></a></li>
-                                                <li><a href="https://web.facebook.com/sonnekoprivnica/" class="icon icon-xs link-gray-light fa-facebook"></a></li>
-                                            </ul>
-                                        </div>
+                                <div class="cell-xs-6 cell-sm-6">
+                                    <!-- CountTo-->
+                                    <div class="counter-header">
+                                        <p>preko</p>
                                     </div>
-                                    <div class="cell-xs-6 cell-md-12 offset-top-50 offset-xs-top-0 offset-md-top-50">
-                                        <div class="h6 text-uppercase">Telefon</div>
-                                        <div class="text-subline offset-top-15"></div>
-                                        <div class="offset-top-25">
-                                            <div class="unit unit-horizontal unit-middle unit-spacing-xs">
-                                                <div class="unit-left"><span class="icon icon-xs icon-primary text-middle mdi mdi-phone"></span></div>
-                                                <div class="unit-body"><span class="text-dark inset-left-5">097 761 9290</span></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cell-xs-6 cell-md-12 offset-top-50">
-                                        <div class="h6 text-uppercase">Adresa</div>
-                                        <div class="text-subline offset-top-15"></div>
-                                        <div class="offset-top-25 unit unit-horizontal unit-spacing-xs">
-                                            <div class="unit-left"><span class="icon icon-xs icon-primary text-middle mdi mdi-map-marker"></span></div>
-                                            <div class="unit-body"><span class="text-dark inset-left-5">Ulica Ivana Generalića 3 (Martinovka), 48000 Koprivnica</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="cell-xs-6 cell-md-12 offset-top-50">
-                                        <div class="h6 text-uppercase">Radno vrijeme</div>
-                                        <div class="text-subline offset-top-15"></div>
-                                        <div class="offset-top-25 unit unit-horizontal unit-spacing-xs">
-                                            <div class="unit-left"><span class="icon icon-xs icon-primary mdi mdi-clock text-middle"></span></div>
-                                            <div class="unit-body"><span class="text-dark inset-left-5">pon-pet 09:00 - 20:00</span></div>
-                                        </div>
-                                        <div class="offset-top-25 unit unit-horizontal unit-spacing-xs">
-                                            <div class="unit-left"><span class="icon icon-xs icon-primary mdi mdi-clock text-middle"></span></div>
-                                            <div class="unit-body"><span class="text-dark inset-left-5">sub 09:00 - 15:00</span></div>
-                                        </div>
+                                    <div data-from="0" data-to="20" class="counter text-primary">20</div>
+                                    <div class="counter-header">
+                                        <p>klijenata dnevno</p>
                                     </div>
                                 </div>
-                            </aside>
                         </div>
                     </div>
                 </div>
             </section>
+            <section class="section-50 section-sm-top-90 section-sm-bottom-100">
+                <div class="shell">
+                    <h4 class="font-default">Naša priča</h4>
+                    <div class="range range-xs-center">
+                        <div class="cell-md-10">
+                            <div class="timeline text-center">
+                                <div class="timeline-date"><span class="h5">2013</span></div>
+                                <div class="range range-sm-reverse range-sm-middle timeline-item timeline-item-reverse">
+                                    <div class="cell-sm-6">
+                                        <img src="images/about-01-420x259.jpg" alt="" width="420" height="259" class="img-responsive" />
+                                    </div>
+                                    <div class="cell-sm-6">
+                                        <h5>Ideja</h5>
+                                        <p class="body-text">Naša priča je započela s idejom da stvorimo mjesto koje će našim klijentima ponuditi kompletnu i kvalitetnu uslugu.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-date"><span class="h5">2015</span></div>
+                                <div class="range range-sm-middle timeline-item">
+                                    <div class="cell-sm-6">
+                                        <img src="images/about-02-420x259.jpg" alt="" width="420" height="259" class="img-responsive" />
+                                    </div>
+                                    <div class="cell-sm-6">
+                                        <h5>Otvaranje</h5>
+                                        <p class="body-text">Nakon svih priprema i edukacija, zapošljavanja iskusnog i stručnog osoblja, spremno smo dočekali prve klijente i goste.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-date"><span class="h5">2017</span></div>
+                                <div class="range range-sm-reverse range-sm-middle timeline-item timeline-item-reverse">
+                                    <div class="cell-sm-6">
+                                        <img src="images/about-03-420x259.jpg" alt="" width="420" height="259" class="img-responsive" />
+                                    </div>
+                                    <div class="cell-sm-6">
+                                        <h5>Danas</h5>
+                                        <p class="body-text">Posvetili smo se našim klijentima i našoj djelatnosti - kompletnoj i kvalitetnoj usluzi sunčanja. I zato smo danas prepoznati kao najbolji u našoj djelatnosti.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>           
             <section>
                 <!-- RD Google Map-->
                 <div data-zoom="15" data-y="46.164646" data-x="16.8274686" data-styles="" class="rd-google-map rd-google-map__model">
@@ -242,7 +230,7 @@
             <section class="section-top-45 section-bottom-40">
                 <div class="shell">
                     <div class="range range-xs-center">
-                        <div class="cell-sm-8 cell-md-10 cell-lg-6">
+                        <div class="cell-sm-6 cell-md-4 cell-lg-3">
                             <div class="group-md">
                                 <h5 class="text-italic font-secondary">Tvrtka</h5>
                             </div>
@@ -259,11 +247,20 @@
                             </ul>
                         </div>
                         <div class="cell-sm-6 cell-md-4 cell-lg-3 offset-top-50 offset-lg-top-0">
-                            <h5 class="text-italic font-secondary">Kontaktirajte nas</h5>
+                            <h5 class="text-italic font-secondary">Telefon</h5>
                             <div class="unit unit-sm-horizontal unit-sm-top unit-spacing-xs offset-top-15">
                                 <div class="unit-left"><span class="icon icon-md-mod-1 icon-default mdi mdi-phone text-middle"></span></div>
                                 <div class="unit-body">
-                                    <address class="contact-info"><a href="callto:#" class="link-white link-lg">097 761 9290</a></address><span class="contact-info">pon–pet: 09–20, sub: 09-15</span>
+                                    <address class="contact-info"><a class="link-white link-lg">097 761 9290</a></address><span class="contact-info">pon–pet: 09–20, sub: 09-15</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cell-sm-6 cell-md-4 cell-lg-3 offset-top-50 offset-lg-top-0">
+                            <h5 class="text-italic font-secondary">Email</h5>
+                            <div class="unit unit-sm-horizontal unit-sm-top unit-spacing-xs offset-top-15">
+                                <div class="unit-left"><span class="icon icon-md-mod-1 icon-default mdi mdi-email text-middle"></span></div>
+                                <div class="unit-body">
+                                    <address class="contact-info"><a class="link-white link-lg">info@sonnesolarium.hr</a></address>
                                 </div>
                             </div>
                         </div>
@@ -279,7 +276,7 @@
                         <div class="cell-md-5 text-center">
                             <p class="copyright">
                                 Sonne Solarium
-                                &nbsp;&#169;&nbsp;<span id="copyright-year"></span>&nbsp;<br class="veil-sm"><a href="privacy.html">Privacy Policy</a>
+                                &nbsp;&#169;&nbsp;<span id="copyright-year"></span>&nbsp;<br class="veil-sm">
                                 <!-- {%FOOTER_LINK}-->
                             </p>
                         </div>
@@ -329,7 +326,5 @@
     <!-- Java script-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
-</body><!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script><!-- End Google Tag Manager -->
+</body>
 </html>
